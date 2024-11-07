@@ -1,0 +1,10 @@
+name = "expect-header"
+main = "src/index.ts"
+compatibility_date = "2024-11-07"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = false
+vars = { }
+
+[dev]
+ip = "0.0.0.0"
+port = 8000
