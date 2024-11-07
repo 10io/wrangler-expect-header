@@ -25,6 +25,10 @@ Apologies for the code quality level here, I'm not knowledgeable in Worker types
 This repository contains:
 
 * A dummy `go` backend application that will simply dump the request body of the `PUT` request.
+  * As documented [here](https://pkg.go.dev/net/http#ResponseWriter) on function `WriteHeader`, here is what `go` will do:
+     > The server will automatically send a 100 (Continue) header
+	  > on the first read from the request body if the request has
+	  > an "Expect: 100-continue" header.
 * A simple worker implementation that will simply proxy the request to the `go` backend.
 
 Requirements:
